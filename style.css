@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: circular;
+}
+a {
+  text-decoration: none;
+  color: #8f8f91;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: circular;
+  src: url(./circular-std-medium-500.ttf);
+}
+
+.container {
+  margin: 0 10rem;
+  padding: 1.2rem 0;
+}
+header {
+  border-bottom: 1px solid #eaeaee;
+}
+.header-area {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  /* align-items: flex-end;
+  justify-content: flex-end; */
+}
+.nav-links li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.logo-area img {
+  width: 50px;
+}
+.header-right {
+  display: flex;
+  gap: 30px;
+}
+
+.header-btn {
+  font-weight: bold;
+  color: #000;
+  padding: 15px 25px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.header-btn:hover {
+  box-shadow: 2px 2px2p0pxx rgba(0, 0, 0, 0.1);
+}
+
+/* hero section  */
+.hero {
+  padding: 80px 0;
+  /* height: 120px; */
+  display: flex;
+  flex-direction: column;
+}
+.hero-area {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-text {
+  width: 60%;
+}
+.hero-text h1 {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+.hero-text p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #666;
+}
+
+.hero-number {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  gap: 50px;
+  margin-top: 30px;
+}
+.number-card {
+  text-align: left;
+}
+.number-card span {
+  font-size: 60px;
+}
+.number-card span sup {
+  font-size: 24px;
+}
+.number-card h3 {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.number-card p {
+  color: #666;
+  line-height: 24px;
+  /* color: rgb(6, 147, 227) ; */
+}
+/*  */
+.hero-image {
+  margin-top: 30px;
+}
+
+.hero-image img {
+  width: 1150px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+/* about section */
+.about {
+  background: linear-gradient(rgba(4, 55, 85, 0.703), rgba(4, 51, 79, 0.703)),
+    url(./images/pexels-rafael-cosquiere-2041540.jpg);
+  padding: 150px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* margin: 120px 0; */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.about h2 {
+  width: 40%;
+  margin-bottom: 18px;
+  font-size: 35px;
+}
+
+.about-btn {
+  background: #ccbd9b;
+  padding: 12px 25px;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+/* logo section  */
+.logo {
+  padding: 40px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.slide img {
+  margin: 0 40px;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* chairman section */
+.chairman-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 5rem;
+}
+.chairman-image img {
+  width: 650px;
+  border-radius: 5px;
+}
+.chairman-text h2 {
+  margin-bottom: 24px;
+  font-size: 2.5rem;
+}
+.chairman-text p {
+  line-height: 28px;
+  margin-bottom: 28px;
+  font-size: 20px;
+}
+
+/* about card  section */
+.abt-card-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.abt-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  padding-bottom: 28px;
+  transition: 0.5s;
+}
+
+.abt-card:hover {
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  /* transform: scale(1.1); */
+  transform: translateY(-7px);
+}
+
+.abt-card:hover h2 {
+  color: brown;
+}
+
+.abt-card img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.abt-card h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.abt-card p {
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 0 30px;
+  /* }
+.abt-card:hover {
+  box-shadow: 2px 2px2p0pxx rgba(0, 0, 0, 0.1); */
+}
+
+/* law section */
+.law {
+  background: linear-gradient(rgba(4, 55, 85, 0.703), rgba(4, 51, 79, 0.703)),
+    url(./images/pexels-rafael-cosquiere-2041540.jpg);
+  padding: 150px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 80px 0;
+}
+.law h2 {
+  width: 40%;
+  margin-bottom: 18px;
+  font-size: 33px;
+}
+.law-btn {
+  background: #ccbd9b;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+/* contact section  */
+.contact {
+  margin: 120px auto;
+}
+.contact-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  /* display: none; */
+  justify-content: center;
+  place-items: center;
+}
+.contact-text h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.contact-text p {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.contact-text form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-text form input,
+.contact-text form textarea {
+  width: 100%;
+  margin: 5px auto;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #eaeaea;
+}
+.contact-text form textarea:focus,
+.contact-text form input:focus {
+  outline: 1px solid blue;
+}
+.contact-btn {
+  padding: 15px 45px;
+  margin-top: 5px;
+  background: #c19b4377;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.footer {
+  background: #12233e;
+  color: #ccc;
+  border-bottom: 1px #ffffff3b solid;
+}
+.footer-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+}
+.fbtn {
+  background: #fff;
+  padding: 15px 25px;
+  color: #000;
+  border-radius: 5px;
+}
+.footer-area footer-link {
+  padding: 15px 45px;
+}
+
+.list {
+  border-bottom: 1px #ffffff3b solid;
+  background: #12233e;
+  color: #ccc;
+  padding: 3rem 0;
+}
+.help {
+  display: flex;
+  justify-content: space-between;
+}
+
+.help ul li {
+  margin: 25px auto;
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+}
+.help ul li:hover {
+  color: #fff;
+}
+.help ul span {
+  color: #666;
+}
+.newsletter form input {
+  outline: 0;
+  border: 0;
+  padding: 10px 18px;
+  border-radius: 3px;
+  margin-top: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+form button {
+  outline: 0;
+  border: 0;
+  padding: 10px 18px;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: -4.5px;
+  background: #c19b4377;
+  color: #fff;
+  z-index: 4;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.writter-klems {
+  background: #12233e;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 7rem;
+  padding-top: 2rem;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.list,
+.writter {
+  position: sticky;
+  bottom: 0;
+  z-index: -50;
+}
+
+.cimg {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
