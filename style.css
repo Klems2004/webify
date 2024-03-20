@@ -15,6 +15,10 @@ h4 {
   font-weight: 400;
 }
 
+.container {
+  margin: 0 3.5rem;
+  padding: 1.2rem 0;
+}
 p {
   font-weight: 100;
 }
@@ -24,16 +28,12 @@ p {
   src: url(./circular-std-medium-500.ttf);
 }
 
-.container {
-  margin: 0 10rem;
-  padding: 1.2rem 0;
-}
 header {
   border-bottom: 1px solid #eaeaee;
 }
 .header-area {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   justify-content: space-between;
   align-items: center;
 }
@@ -402,13 +402,6 @@ form button {
   letter-spacing: 1px;
 }
 
-.list,
-.writter {
-  position: sticky;
-  bottom: 0;
-  z-index: -50;
-}
-
 .cimg {
   width: 30px;
   height: 30px;
@@ -416,4 +409,122 @@ form button {
   padding: 5px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+/* hamburger button styles */
+.hamburger,
+.close {
+  background: transparent;
+  bottom: 0;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+/*===== MEDIA QUERY FOR MOBILE DEVICES=========================== */
+@media (max-width: 600px) {
+  /* hamburger style in mobile */
+  .header-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #1f1f1f;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 20px 50px;
+    z-index: 999;
+    display: none;
+  }
+  .nav-links {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  .header-btn {
+    color: #fff;
+    font-weight: 300;
+  }
+  .hamburger {
+    display: block;
+  }
+  .close {
+    color: #fff;
+    display: block;
+    position: relative;
+    top: 0;
+  }
+
+  .container {
+    margin: 0 2rem;
+    max-width: 90vw;
+    padding: 1.2rem 0;
+  }
+  .hero-text,
+  .hero-number {
+    width: 90%;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero-number {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero-image img,
+  .chairman-image img {
+    width: 450px;
+    height: 350px;
+  }
+  .chairman-area,
+  .contact-area {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    overflow: hidden;
+  }
+
+  .abt-card-area {
+    display: flex;
+    flex-direction: column;
+  }
+  .about,
+  .law {
+    padding: 80px 0;
+  }
+
+  .about h2,
+  .law h2 {
+    width: 80%;
+    margin-bottom: 18px;
+    font-size: 22px;
+  }
+  .map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer {
+    background: #12233e;
+    color: #ccc;
+    border-bottom: 1px #ffffff3b solid;
+  }
+  .footer-area {
+    flex-direction: column;
+    padding: 60px 0;
+  }
+  .footer-area a {
+    margin-top: 20px;
+  }
+
+  .help {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
