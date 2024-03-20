@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: circular;
+  /* overflow: hidden; */
 }
 a {
   text-decoration: none;
@@ -18,6 +19,10 @@ h4 {
 .container {
   margin: 0 3.5rem;
   padding: 1.2rem 0;
+  overflow: hidden;
+}
+section {
+  overflow: hidden;
 }
 p {
   font-weight: 100;
@@ -181,6 +186,7 @@ header {
   gap: 80px;
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 5rem;
+  /* display: none; */
 }
 .chairman-image img {
   width: 650px;
@@ -439,6 +445,7 @@ form button {
     z-index: 999;
     display: none;
   }
+
   .nav-links {
     flex-direction: column;
     margin: 50px auto;
@@ -477,13 +484,14 @@ form button {
   }
   .hero-image img,
   .chairman-image img {
-    width: 450px;
+    width: 350px;
     height: 350px;
   }
   .chairman-area,
   .contact-area {
     display: flex;
     flex-direction: column;
+    /* margin: 0; */
   }
   .logo {
     overflow: hidden;
@@ -526,5 +534,9 @@ form button {
   .help {
     flex-direction: column;
     gap: 25px;
+  }
+  .container {
+    max-width: 100vw;
+    overflow: hidden;
   }
 }
